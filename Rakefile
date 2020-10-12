@@ -12,7 +12,7 @@ end
 
 namespace :db do 
   desc 'migrate changes to your database'
-  task :migrate => :environment do 
+  task :migrate => :environment do #this creates a task dependency, so we need to define another Rake task to ask for access to the environment file
     Student.create_table
   end
 end
