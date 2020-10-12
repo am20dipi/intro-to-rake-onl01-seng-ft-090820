@@ -1,4 +1,4 @@
-desc 'outputs hello to the terminal'
+desc 'outputs hello to the terminal' #this allows us to view a list of available Rake tasks and their descriptions using rake -T command in command line
 task :hello do
   puts "hello from Rake!"
 end
