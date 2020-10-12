@@ -15,4 +15,8 @@ namespace :db do
   task :migrate => :environment do #this creates a task dependency, so we need to define another Rake task to ask for access to the environment file
     Student.create_table
   end
+  
+  task :environment do
+    require_relative './config/environment'
+  end
 end
